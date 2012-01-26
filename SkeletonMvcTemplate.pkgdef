@@ -1,0 +1,11 @@
+[$RootKey$\MVC3\ProjectTemplates\SkeletonMvcProjectTemplate]
+"Title"="Skeleton MVC Template"
+"Description"="An ASP.NET MVC Project Template using the Skeleton css framework."
+
+[$RootKey$\MVC3\ProjectTemplates\SkeletonMvcProjectTemplate\C#]
+
+[$RootKey$\MVC3\ProjectTemplates\SkeletonMvcProjectTemplate\C#\Razor]
+"Path"="CSharp\\Web"
+"SupportsHTML5"=dword:00000000
+"SupportsUnitTests"=dword:00000000
+"Template"="SkeletonMvcTemplate.zip"

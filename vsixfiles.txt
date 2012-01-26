@@ -1,0 +1,5 @@
+ProjectTemplates\CSharp\Web\SkeletonMvcTemplate.zip
+extension.vsixmanifest
+license.txt
+SkeletonMvcTemplate.pkgdef
+[Content_Types].xml

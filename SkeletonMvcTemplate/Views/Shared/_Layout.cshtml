@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="@Url.Content("~/Content/css/base.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/skeleton.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/layout.css")" rel="stylesheet" type="text/css" />
+	
+    <script src="@Url.Content("~/Content/js/LAB.js")" type="text/javascript"></script>
+	<script type="text/javascript">
+		var waitHandle = $LAB
+			.script("@Url.Content("~/Content/js/jquery.min.js")")
+			.script("@Url.Content("~/Content/js/modernizr.min.js")")
+			.script("@Url.Content("~/Content/js/tabs.js")")
+	</script>
+</head>
+
+<body>
+	<div class="container">
+    @RenderBody()
+	</div>
+	
+	<script type="text/javascript">
+		waitHandle.wait(function(){
+			// do page load javascript stuff here
+		});
+	</script>
+
+</body>
+</html>

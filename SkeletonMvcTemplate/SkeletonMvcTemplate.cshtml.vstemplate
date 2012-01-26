@@ -1,0 +1,77 @@
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+    <TemplateData>
+        <Name Package="{1F372076-D9CE-432D-BC4F-ABFF39671C5C}" ID="21204"/>
+        <Description Package="{1F372076-D9CE-432D-BC4F-ABFF39671C5C}" ID="21205"/>
+        <Icon Package="{349c5850-65df-11da-9384-00065b846f21}" ID="9001" />
+        <ProjectType>CSharp</ProjectType>
+        <ProjectSubType>Web</ProjectSubType>
+        <TemplateGroupID>Web</TemplateGroupID>
+        <TemplateID>SkeletonMVCWebApplication.v1</TemplateID>
+        <SortOrder>51</SortOrder>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>SkeletonMvcApplication</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+        <Hidden>true</Hidden>
+    </TemplateData>
+    <TemplateContent>
+        <CustomParameters>
+            <CustomParameter Name="$language$" Value="C#" />
+            <CustomParameter Name="$languageext$" Value="cs" />
+            <CustomParameter Name="$autoeventwireup$" Value="true" />
+            <CustomParameter Name="$globalclassname$" Value="MvcApplication" />
+            <CustomParameter Name="$sitemasterclassname$" Value="Views.Shared.Site" />
+            <CustomParameter Name="$indexerleft$" Value="[" />
+            <CustomParameter Name="$indexerright$" Value="]" />
+            <CustomParameter Name="$MVCReferences$" Value="System.Web.Mvc.dll"/>
+            <CustomParameter Name="$EmptyMvcProjectTemplate$" Value="true" />
+        </CustomParameters>
+        <Project File="SkeletonMvcApplication.csproj" ReplaceParameters="true">
+			<ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.cs">Global.asax.cs</ProjectItem>
+            <Folder Name="Controllers" TargetFolderName="Controllers">
+				<ProjectItem ReplaceParameters="true" TargetFileName="HomeController.cs">HomeController.cs</ProjectItem>
+			</Folder>
+            <Folder Name="Models" TargetFolderName="Models" />
+            <Folder Name="Properties" TargetFolderName="Properties">
+                <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+            </Folder>
+            <Folder Name="Content" TargetFolderName="Content">
+				<Folder Name="css" TargetFolderName="css">
+					<ProjectItem ReplaceParameters="true" TargetFileName="base.css">base.css</ProjectItem>
+					<ProjectItem ReplaceParameters="true" TargetFileName="skeleton.css">skeleton.css</ProjectItem>
+					<ProjectItem ReplaceParameters="true" TargetFileName="layout.css">layout.css</ProjectItem>
+				</Folder>
+				<Folder Name="js" TargetFolderName="js">
+					<ProjectItem ReplaceParameters="true" TargetFileName="LAB.js">LAB.js</ProjectItem>
+					<ProjectItem ReplaceParameters="true" TargetFileName="jquery.min.js">jquery.min.js</ProjectItem>
+					<ProjectItem ReplaceParameters="true" TargetFileName="modernizr.min.js">modernizr.min.js</ProjectItem>
+					<ProjectItem ReplaceParameters="true" TargetFileName="tabs.js">tabs.js</ProjectItem>
+				</Folder>
+				<Folder Name="images" TargetFolderName="images">
+					<ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+					<ProjectItem ReplaceParameters="false" TargetFileName="apple-touch-icon.png">apple-touch-icon.png</ProjectItem>
+					<ProjectItem ReplaceParameters="false" TargetFileName="apple-touch-icon-72x72.png">apple-touch-icon-72x72.png</ProjectItem>
+					<ProjectItem ReplaceParameters="false" TargetFileName="apple-touch-icon-114x114.png">apple-touch-icon-114x114.png</ProjectItem>
+				</Folder>
+            </Folder>
+            <Folder Name="Views" TargetFolderName="Views">
+                <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+                <Folder Name="Shared" TargetFolderName="Shared">
+                    <ProjectItem ReplaceParameters="true" TargetFileName="Error.cshtml">Error.cshtml</ProjectItem>
+                    <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.cshtml">_Layout.cshtml</ProjectItem>
+                </Folder>
+                <Folder Name="Home" TargetFolderName="Home">
+                    <ProjectItem ReplaceParameters="true" TargetFileName="Index.cshtml">Index.cshtml</ProjectItem>
+                </Folder>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Web.Debug.config">Web.Debug.config</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
